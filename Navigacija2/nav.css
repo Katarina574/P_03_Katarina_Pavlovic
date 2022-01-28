@@ -1,0 +1,61 @@
+.container {
+  clear: both;
+  overflow: auto;
+  margin: auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat;
+  overflow: hidden;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  height: 180px;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 180px;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: #515058;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.logo {
+  float: left;
+  text-align: center;
+  width: 170px;
+  line-height: 180px;
+}
+
+a:enabled,
+a:hover {
+  color: #e69bc5;
+  transition: 0.2s;
+}
+
+.wrapper {
+  box-shadow: 1px 5px 10px 0px #cecece;
+}

@@ -1,0 +1,102 @@
+.container {
+  clear: both;
+  overflow: auto;
+  width: 60%;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.plava:onclick {
+  color: aqua;
+}
+
+body {
+  font-family: raleway;
+  background-image: url(../slike/pozadina.png);
+  color: #515058;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Style Script", cursive;
+  font-size: 5rem;
+}
+
+.menu {
+  background-color: azure;
+  box-shadow: 1px 5px 10px 0px #cecece;
+  margin-top: 0;
+}
+
+.container {
+  clear: both;
+  overflow: auto;
+  width: 60%;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  float: right;
+}
+
+.logo {
+  float: left;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+}
+
+ul li:hover {
+  color: #e69bc5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slika img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.slika {
+  width: 80%;
+}
+
+.button {
+  background-color: #e69bc5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button a:hover {
+  color: white;
+}
+
+button:hover {
+  background-color: #f6d9dd;
+}
+
+.naslov h1 {
+  margin-bottom: 5px;
+}
