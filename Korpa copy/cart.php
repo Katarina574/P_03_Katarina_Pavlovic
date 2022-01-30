@@ -9,17 +9,17 @@ class Korpa {
         }
     }
 
-    function dodajUKorpu($id,$amount) {
-        if(isset($_SESSION['item_cart'][$id])) {
-            $_SESSION['item_cart'][$id] += $amount;
+    function dodajUKorpu($ime,$amount) {
+        if(isset($_SESSION['item_cart'][$ime])) {
+            $_SESSION['item_cart'][$ime] += $amount;
         } else {
-            $_SESSION['item_cart'][$id] = $amount;
+            $_SESSION['item_cart'][$ime] = $amount;
         }
     }
 
     function listajKorpu() {
-        foreach ($_SESSION['item_cart'] as $id => $amount) {
-            echo "Stavka $id je u korpi $amount puta<br>";
+        foreach ($_SESSION['item_cart'] as $ime => $amount) {
+            echo "Narucili ste cestitku: $ime; Kolicina: $amount puta<br>";
         }
     }
 

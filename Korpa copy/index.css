@@ -1,0 +1,67 @@
+.container {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.stavka {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: solid 1px lightgrey;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.zavrsetaknarucivanja {
+  clear: both;
+  overflow: auto;
+  margin: auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  flex-wrap: wrap;
+}
+
+button,
+input {
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  font-family: montserrat;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #e69bc5;
+  border-radius: 50px;
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.isprazni {
+  border: 1px solid #e69bc5;
+  background-color: transparent;
+  color: #e69bc5;
+}
+
+a {
+  margin-right: 30px;
+}
+
+@media (max-width: 500px) {
+  .zavrsetaknarucivanja {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .zavrsetaknarucivanja a {
+    margin-top: 70px;
+  }
+
+  .zavrsetaknarucivanja input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

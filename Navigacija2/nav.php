@@ -13,13 +13,16 @@
     <div class="wrapper">
         <div class="container">
             <nav>
+            <label class="tgl" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
                 <a href="../pocetna strana/pocetna.php">
                     <img class="logo" src="../slike/PIM-logo.png" alt=""></a>
                 <ul>
                     <li><a href="../Kreiraj/kreiraj.php">Kreiraj čestitku</a></li>
-                    <li><a href="../galerija/galerija.php">Prodavnica</a></li>
+                    <li><a href="../korpa copy/index.php">Prodavnica</a></li>
                     <li><a href="../kontakt/kontakt.php">Kontakt</a></li>
-                    <li><a href="../login/login.php">Login</a></li>
+                    <li><a href="../korpa copy/prikaz.php">Korpa</a></li>
                 </ul>
             </nav>
         </div>

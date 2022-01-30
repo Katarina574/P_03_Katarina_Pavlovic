@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./forma.css">
     <link rel="stylesheet" href="../navigacija2/nav.css">
     <link rel="stylesheet" href="../footer2/footer.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
@@ -75,10 +76,40 @@
         </div>
     </div>
     <div class="dodajukorpu">
-        <form action="../login/login.php">
-            <input type="submit" class="submit" name="submit" value="Naruči">
-    </div>
+   <button class='button' type='button'onclick="naruci('Po kreaciji')" >Naruči</button>
+   <div class="container">
+   <div class="zavrsetaknarucivanja">
+    <div><a href="./prikaz.php">Prikaži korpu</a></div>
+    <form method="POST" action="./isprazni.php">
+        <input type="hidden" name="isprazni" />
+        <input type="submit" class="isprazni" value="Isprazni korpu" />
     </form>
+    </div>
+    
+    </div>
+    <script>
+        const naruci = (_ime) => {
+            data = {
+                ime: _ime
+            };
+            console.log("blabla");
+            data = JSON.stringify(data);
+            fetch('./porudzbina.php',{
+                method: "POST",
+                body: data,
+            }).then((response) => {
+                response.json().then((data)=> {
+                    console.log(data);
+                    if(data.response == 'success') {
+                        alert('uspeh!');
+                    } else {
+                        alert('greska!');
+                    }
+                });
+            })
+        }
+    </script>
+    
 
     <div class="futer">
         <?php include '../footer2/footer.php'; ?>

@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  font-family: montserrat;
+}
+
+.userr {
+  margin-top: 150px;
+}
+
+input {
+  border: none;
+  border-bottom: solid 1px lightgrey;
+  background-color: transparent;
+  margin-top: 25px;
+  outline: none;
+}
+
+.sbmt {
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  font-family: montserrat;
+  color: white;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  background-color: #e69bc5;
+  border-radius: 50px;
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 30px;
+  margin-bottom: 150px;
+}
+
+.sbmt:hover {
+  background-color: #f6d9dd;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
